@@ -1,0 +1,125 @@
+ Install Angular Material
+ng add @angular/material
+
+1>"custom" for a custom theme:
+2.Set up global Angular Material typography styles:
+3,.Set up browser animations for Angular Material:
+
+
+changes
+package.json
+index.html
+few global CSS styles
+
+slider
+-----------------------
+import { MatSliderModule }
+ from '@angular/material/slider';
+@NgModule ({....
+  imports: [...,
+  MatSliderModule,
+…]
+
+
+Add the <mat-slider> tag to the app.component.html like so:
+
+<mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+
+button
+--------------------------------------
+import {MatButtonModule} from '@angular/material/button';
+MatButton
+Material design button.
+
+Selector: button[mat-button] button[mat-raised-button] button[mat-icon-button] 
+button[mat-fab] button[mat-mini-fab] 
+button[mat-stroked-button] button[mat-flat-button]
+
+
+button design
+<button mat-button>click me</button>
+<button mat-raised-button>click me</button>
+<button mat-flat-button>Click me</button>
+<button mat-stroke-button>click me</button>
+
+
+<div>
+  <button mat-icon-button>ICON</button>
+  <button mat-fab>fab</button>
+  <button mat-mini-fab>mini</button>
+</div>
+<div>
+  <button color="primary" mat-button>primary</button>
+  <button color="accent" mat-button>Accent</button>
+  <button color="warm" mat-button>warm</button>
+  <button color="primary" mat-raised-button>primary</button>
+  <button color="accent" mat-raised-button>Accent</button>
+  <button color="warm"  mat-raised-button>warm</button>
+</div>
+
+
+
+display
+_----------------------------------------------
+<div class="mat-display-4">this is mat-display-4</div>
+<div class="mat-display-3">this is mat-display-3</div>
+<div class="mat-display-2">this is mat-display-2</div>
+<div class="mat-display-1">this is display 1</div>
+
+
+
+heading
+------------------------------------------
+<div class="mat-headline">this is heading for h1</div>
+<div class="mat-subheading-1">this is mat-subheading-1</div>
+<div class="mat-subheading-2">this is mat-subheading-2</div>
+<div class="mat-title">this is heading idk</div>
+
+
+body
+------------------------------------------------
+<div class="mat-headline">this is heading for h1</div>
+<div class="mat-subheading-1">this is mat-subheading-1</div>
+<div class="mat-subheading-2">this is mat-subheading-2</div>
+<div class="mat-title">this is heading idk</div>
+
+
+toolbar
+------------------------------------------------------------
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+<mat-toolbar color="primary"><span>Codevolution</span></mat-toolbar>
+
+
+spinner
+----------------------------------------------------------
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
+
+<mat-progress-spinner value="40"></mat-progress-spinner>
+
+sidenavigation
+------------------------------------------------------
+
+import {MatSidenavModule} from '@angular/material/sidenav';
+
+
+<mat-sidenav-container>
+<mat-sidenav opened>Sidenav</mat-sidenav>
+<mat-sidenav-content>Main</mat-sidenav-content>
+</mat-sidenav-container>
+
+icon
+---------------------------------------------------------
+import {MatIconModule} from '@angular/material/icon';
+side:-https://fonts.google.com/icons?selected=Material+Icons
+<div>
+  <mat-icon>home</mat-icon>
+  <span class="material-icons">
+    delete
+    </span>
+  <span class="material-icons">
+    home
+    </span>
+</div>
